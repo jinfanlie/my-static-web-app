@@ -14,21 +14,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HeaderBar />
-        <div className="section columns">
-          <NavBar />
-          <main className="column">
-            <Suspense fallback={<div>Loading...</div>}>
-              <Switch>
-                <Redirect from="/" exact to="/products" />
-                <Route path="/products" component={Products} />
-                <Route path="/about" component={About} />
-                <Route exact path="**" component={NotFound} />
-              
-              </Switch>
-            </Suspense>
-          </main>
-        </div>
+        <div>
+          <h2>hahaha
+               总算进来了。
+               剩下的是 HTML和 js 后台代码编写。
+               azure 上搭建 sqlsever搭建。以及 再js怎么连接这个sql服务器和访问。
+          </h2>
+          </div>
+          {/* <div><img src="../tupian/xiangmu1.png" alt="作业" /></div> */}
       </div>
     );
   }
