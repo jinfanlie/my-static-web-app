@@ -14,11 +14,21 @@ class App extends Component {
   render() {
     return (
       <div>
-          <h2>hahaha
-               总算进来了。
-               剩下的是 HTML和 js 后台代码编写。
-               sqlsever搭建。
-          </h2>
+        <HeaderBar />
+        <div className="section columns">
+          <NavBar />
+          <main className="column">
+            <Suspense fallback={<div>Loading...</div>}>
+              <Switch>
+                <Redirect from="/" exact to="/products" />
+                <Route path="/products" component={Products} />
+                <Route path="/about" component={About} />
+                <Route exact path="**" component={NotFound} />
+              
+              </Switch>
+            </Suspense>
+          </main>
+        </div>
       </div>
     );
   }
