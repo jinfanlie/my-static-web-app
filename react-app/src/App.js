@@ -14,7 +14,11 @@ class App extends Component {
   render() {
     return (
       <div>
-          <h2>hahaha</h2>
+          <h2>hahaha
+               总算进来了。
+               剩下的是 HTML和 js 后台代码编写。
+               sqlsever搭建。
+          </h2>
       </div>
     );
   }
