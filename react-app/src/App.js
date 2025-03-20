@@ -14,20 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HeaderBar />
-        <div className="section columns">
-          <NavBar />
-          <main className="column">
-            <Suspense fallback={<div>Loading...</div>}>
-              <Switch>
-                <Redirect from="/" exact to="/products" />
-                <Route path="/products" component={Products} />
-                <Route path="/about" component={About} />
-                <Route exact path="**" component={NotFound} />
-              </Switch>
-            </Suspense>
-          </main>
-        </div>
+          <h2>hahaha</h2>
       </div>
     );
   }
